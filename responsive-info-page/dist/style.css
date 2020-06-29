@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+header h2 {
+  margin-left: 1em;
+}
+#header-image, ul, section {
+  display: flex;
+}
+
+img {
+  width:5em;
+  height: 4em;
+  margin: 0 10px 
+}
+
+a {
+  text-decoration: none;
+}
+.nav-link {
+  list-style-type: none;
+  color: black;
+  margin: 0 50px;
+  font-size: 1.2em;
+}
+.nav-link:hover {
+  color: teal;
+}
+
+main {
+  text-align: center;
+  width: 50%;
+  margin: 7em auto;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+input {
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#submit {
+  background-color: #F8B000;
+  padding: 5px;
+  width: 20%;
+  font-size: 1.2em;
+  border: none;
+}
+
+section {
+  width: 60%;
+  margin: 0 auto
+}
+span {
+  margin: 20px 20px 0 0;
+  color: #F8B000;
+}
+
+#video {
+  text-align: center;
+  margin: 5em 0;
+}
+
+.container {
+    min-height: 50px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+.panel {
+  border: 1px solid black;
+  margin: 10px
+}
+.panel h2 {
+  background-color: lightgray;
+  margin: 0;
+  padding: 10px
+}
+.container button {
+  background-color: #F8B000;
+  padding: 5px;
+  width: 40%;
+  font-size: 1.2em;
+  border: none;
+  margin-bottom: 15px;
+}
+footer {
+  background-color: #F6F6F6;
+  padding: 1px;
+  text-align: end;
+  margin-top: 5em;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .nav-link {
+  list-style-type: none;
+  color: black;
+  margin: 0 10px;
+  font-size: 1em;
+}
+  #header-image {
+    max-height: 50px;
+  }
+  main {
+  text-align: center;
+  width: 80%;
+}
+  input, #submit {
+    width: 100%;
+  }
+  section, iframe {
+    width: 90%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  footer {
+    text-align: center;
+  }
+}
